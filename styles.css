@@ -1,0 +1,67 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+#title {
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 10vh;
+    margin-top: -15vh; /* Negative half of height. */
+    margin-left: -19.5vh; /* Negative half of width. */
+    font-family: 'Orbitron', sans-serif;
+}
+
+#kaldheim {
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-size: 5vh;
+    filter: brightness(50%);
+    margin-top: -3vh; /* Negative half of height. */
+    margin-left: -13.5vh; /* Negative half of width. */
+    font-family: 'Orbitron', sans-serif;
+}
+
+#kaldheim:hover {
+    filter: brightness(200%);
+    animation-name: brighten;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+    cursor: pointer;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+          
+.mystyle { 
+    animation-name: reverse; 
+    animation-duration: 1s; 
+} 
+          
+@keyframes brighten { 
+    from { 
+        filter: brightness(50%)
+    } 
+    to { 
+        filter: brightness(150%)
+    } 
+} 
+          
+@keyframes reverse { 
+    from { 
+        filter: brightness(150%)
+    } 
+    to { 
+        filter: brightness(50%) 
+    } 
+} 
